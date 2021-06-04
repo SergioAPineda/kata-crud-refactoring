@@ -8,4 +8,6 @@ public interface TodoService {
     public TodoDTOResponse save(TodoDTO todo);
     public TodoDTOResponse getAll();
     public TodoDTOResponse  get(int id);
+    /*public TodoDTOResponse  delete(int id);*/
+
 }

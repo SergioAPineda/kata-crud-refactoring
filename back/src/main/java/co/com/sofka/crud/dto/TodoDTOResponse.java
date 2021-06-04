@@ -22,4 +22,8 @@ public class TodoDTOResponse {
     public void addListDTO(TodoDTO todoDTO) {
         this.todoListDTO.add(todoDTO);
     }
+
+/*    public void delete(int id) {
+        this.todoListDTO.remove(id);
+    }*/
 }
