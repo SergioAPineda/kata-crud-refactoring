@@ -11,7 +11,15 @@ public class TodoDTOResponse {
         todoListDTO = new ArrayList<TodoDTO>();
     }
 
-    public List<TodoDTO> getListDTO() { return todoListDTO; }
-    public void setListDTO(List<TodoDTO> todoListDTO){ this.todoListDTO = todoListDTO; }
-    public void addListDTO(TodoDTO todoDTO){ this.todoListDTO.add(todoDTO); }
+    public List<TodoDTO> getListDTO() {
+        return todoListDTO;
+    }
+
+    public void setListDTO(List<TodoDTO> todoListDTO) {
+        this.todoListDTO = todoListDTO;
+    }
+
+    public void addListDTO(TodoDTO todoDTO) {
+        this.todoListDTO.add(todoDTO);
+    }
 }

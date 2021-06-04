@@ -8,7 +8,7 @@ import javax.persistence.Id;
 public class Todo {
     @Id
     @GeneratedValue
-    private Long id;
+    private int id;
     private String name;
     private boolean completed;
     private String groupListId;
@@ -21,11 +21,11 @@ public class Todo {
         this.groupListId = groupListId;
     }
 
-    public Long getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
