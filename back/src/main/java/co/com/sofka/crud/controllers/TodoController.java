@@ -31,10 +31,10 @@ public class TodoController {
         return service.get(id);
     }
 
-/*    @DeleteMapping(value = "api/{id}/todo")
-    public void delete(@PathVariable("id")int id){
-        service.delete(id);
-    }*/
+    @DeleteMapping(value = "api/{id}/todo")
+    public TodoDTOResponse delete(@PathVariable("id")int id){
+        return service.delete(id);
+    }
 
     @PutMapping(value = "api/todo")
     public TodoDTOResponse update(@RequestBody TodoDTO todoDTO){

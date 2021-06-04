@@ -1,7 +1,11 @@
 package co.com.sofka.crud.dto;
 
+import org.hibernate.validator.constraints.Range;
+
 import java.util.ArrayList;
 import java.util.List;
+
+import static org.apache.catalina.security.SecurityUtil.remove;
 
 public class TodoDTOResponse {
     List<TodoDTO> todoListDTO;
@@ -23,7 +27,7 @@ public class TodoDTOResponse {
         this.todoListDTO.add(todoDTO);
     }
 
-/*    public void delete(int id) {
-        this.todoListDTO.remove(id);
-    }*/
+    public void delete(int id) {
+        this.todoListDTO = todoListDTO;
+    }
 }

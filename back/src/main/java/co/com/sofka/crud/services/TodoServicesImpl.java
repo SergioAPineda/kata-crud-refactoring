@@ -56,15 +56,16 @@ public class TodoServicesImpl implements TodoService {
         return response;
     }
 
-/*    public TodoDTOResponse delete(int id) {
+    public TodoDTOResponse delete(int id) {
         TodoDTOResponse response = new TodoDTOResponse();
 
         try {
+            repository.deleteById(id);
             response.delete(id);
-        } catch (Exception e){
-            System.out.println("No se pudo eliminar");
+        } catch (Exception e) {
+            System.out.println("No se puede eliminar, porque no existe");
         }
         return response;
-    }*/
+    }
 
 }
