@@ -1,9 +1,7 @@
 package co.com.sofka.crud.dto;
 
-import java.io.Serializable;
-
-public class TodoDTO implements _DTOEntity {
-    private int id;
+public class TodoDTO {
+    private Long id;
     private String name;
     private boolean completed;
     private String groupListId;
@@ -11,18 +9,18 @@ public class TodoDTO implements _DTOEntity {
     public TodoDTO() {
     }
 
-    public TodoDTO(int id, String name, boolean completed, String groupListId) {
+    public TodoDTO(Long id, String name, boolean completed, String groupListId) {
         this.id = id;
         this.name = name;
         this.completed = completed;
         this.groupListId = groupListId;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 

@@ -3,11 +3,12 @@ package co.com.sofka.crud.entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "todoTable")
 public class Todo {
 
     @Id
     @GeneratedValue
-    private int id;
+    private Long id;
     private String name;
     private boolean completed;
     private String groupListId;
@@ -20,11 +21,11 @@ public class Todo {
         this.groupListId = groupListId;
     }
 
-    public int getId() {
+    public Long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Long id) {
         this.id = id;
     }
 
